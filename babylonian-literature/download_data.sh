@@ -43,6 +43,23 @@ cp "$DATA_DIR/cdli_repo/cdliatf_unblocked.atf" "$DATA_DIR/cdliatf_unblocked.atf"
 cp "$DATA_DIR/cdli_repo/cdli_cat.csv"           "$DATA_DIR/cdli_cat.csv"
 rm -rf "$DATA_DIR/cdli_repo"
 
+# ---------------------------------------------------------------------------
+# 3. Gilgamesh canonical text — all 12 Standard Babylonian tablets
+#    Source: Electronic Babylonian Library public API
+#    Includes: canonical ATF, English translations, manuscript variants, gap markers
+# ---------------------------------------------------------------------------
+echo ""
+echo "Downloading Gilgamesh canonical text (all 12 tablets) from eBL API..."
+mkdir -p "$DATA_DIR/gilgamesh"
+BASE="https://www.ebl.lmu.de/api/texts/L/1/4/chapters/Standard%20Babylonian"
+for TABLET in I II III IV V VI VII VIII IX X XI XII; do
+  echo "  Tablet $TABLET..."
+  curl -s -o "$DATA_DIR/gilgamesh/tablet_${TABLET}.json" \
+    "${BASE}/${TABLET}/display"
+  sleep 0.3
+done
+
 echo ""
 echo "All done. Files in $DATA_DIR:"
 ls -lh "$DATA_DIR"
+ls -lh "$DATA_DIR/gilgamesh"

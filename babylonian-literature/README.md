@@ -10,6 +10,26 @@ The Epic of Gilgamesh is the oldest major work of literature on Earth — writte
 
 The most recent major discovery happened in 2014, when a fragment in a museum in Sulaymaniyah (Iraqi Kurdistan) was identified and added 20 entirely new lines to Tablet V — the Cedar Forest episode where Gilgamesh and Enkidu fight the monster Humbaba. The fragment had been sitting in a drawer, unrecognised. That is exactly the kind of find this project is looking for.
 
+Measured against the canonical eBL text, **70% of all lines have at least one gap**:
+
+| Tablet | Content | Gap lines | Gap % |
+|--------|---------|-----------|-------|
+| I | 300 | 148 | 49% |
+| II | 187 | 143 | 76% |
+| III | 209 | 149 | 71% |
+| IV | 156 | 155 | **99%** |
+| V | 281 | 235 | 84% |
+| VI | 195 | 109 | 56% |
+| VII | 220 | 193 | 88% |
+| VIII | 216 | 182 | 84% |
+| IX | 137 | 112 | 82% |
+| X | 328 | 263 | 80% |
+| XI | 339 | 97 | 29% |
+| XII | 139 | 104 | 75% |
+| **Total** | **2707** | **1890** | **70%** |
+
+Tablet XI (the Flood tablet) is the best-preserved at 29% gaps — it was the most copied and distributed. Tablet IV is almost entirely lost. Tablet X, where Gilgamesh wanders the wilderness after Enkidu's death and meets the tavern-keeper Siduri, is 80% broken.
+
 ### Where the missing pieces are
 
 The full eBL dataset has 23,289 fragments. Only 35 are explicitly tagged as Gilgamesh — because most unidentified fragments haven't been placed yet. Almost every line in those 35 has `[...]` breaks or unreadable signs. For example, fragment `K.18183` covers just 6 lines of Tablet IX and half of those are broken:
@@ -41,6 +61,7 @@ Run `bash download_data.sh` from this directory to fetch everything into `data/`
 | `data/ebl_fragments_sample.json` | ~4 MB | 1k tablet sample from the same source — good for fast iteration. |
 | `data/cdliatf_unblocked.atf` | ~83 MB | CDLI full ATF dump — hundreds of thousands of tablets in standard cuneiform transliteration format. Frozen Aug 2022. |
 | `data/cdli_cat.csv` | ~148 MB | CDLI catalogue — metadata (provenance, period, genre) for all tablets in the ATF dump. |
+| `data/gilgamesh/tablet_I.json` … `tablet_XII.json` | ~2 MB total | Canonical text of all 12 Standard Babylonian tablets from the eBL API. Each file includes the ATF text, English translation, manuscript variants, and gap markers. This is the "puzzle board" — the known text with holes that unidentified fragments may fill. |
 
 ### Key fields in `ebl_fragments.json`
 
