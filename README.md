@@ -2,8 +2,6 @@
 
 AI-assisted research into ancient languages, lost texts, and deep etymology.
 
-A collaboration between Marina Boia and Juro Gottweis.
-
 ---
 
 ## The Pick: Hunting Lost Lines of Gilgamesh
