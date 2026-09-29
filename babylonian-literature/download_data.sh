@@ -29,11 +29,10 @@ curl -L --progress-bar \
 #    Requires git-lfs: brew install git-lfs
 # ---------------------------------------------------------------------------
 echo ""
-echo "Downloading CDLI ATF dump (requires git-lfs)..."
+echo "Downloading CDLI ATF dump..."
 if ! command -v git-lfs &> /dev/null; then
-  echo "  git-lfs not found. Install with: brew install git-lfs"
-  echo "  Then re-run this script."
-  exit 1
+  echo "  git-lfs not found, installing via Homebrew..."
+  brew install git-lfs
 fi
 
 git lfs install
