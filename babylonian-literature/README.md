@@ -4,6 +4,27 @@ Hunt for missing fragments and lost lines of cuneiform literature — especially
 
 ## Mission
 
+### The problem: Gilgamesh is half missing
+
+The Epic of Gilgamesh is the oldest major work of literature on Earth — written on 12 clay tablets, roughly 3,000 lines in its Standard Babylonian version. About 40–50% of the text is gone. Large stretches of Tablet IV are missing. Tablet X (where Gilgamesh meets the tavern-keeper and the ferryman on his journey to find immortality) has whole sections lost. Tablet III is barely there.
+
+The most recent major discovery happened in 2014, when a fragment in a museum in Sulaymaniyah (Iraqi Kurdistan) was identified and added 20 entirely new lines to Tablet V — the Cedar Forest episode where Gilgamesh and Enkidu fight the monster Humbaba. The fragment had been sitting in a drawer, unrecognised. That is exactly the kind of find this project is looking for.
+
+### Where the missing pieces are
+
+The full eBL dataset has 23,289 fragments. Only 35 are explicitly tagged as Gilgamesh — because most unidentified fragments haven't been placed yet. Almost every line in those 35 has `[...]` breaks or unreadable signs. For example, fragment `K.18183` covers just 6 lines of Tablet IX and half of those are broken:
+
+```
+1'. [x] x x [...]
+2'. 2 DANN[A ...]
+3'. ša₂-pat ek-l[i-tum₃-ma ...]
+4'. ul i-na-a[n-din ...]
+```
+
+The most promising targets are the thousands of unassigned Neo-Assyrian fragments from Kuyunjik — the site of Assurbanipal's library at Nineveh, the largest text collection in antiquity, and the source of most known Gilgamesh tablets. The eBL dataset alone has 250 unplaced Kuyunjik fragments. None of them have been matched against the gaps in Gilgamesh.
+
+### The approach
+
 Tens of thousands of clay tablets from ancient Mesopotamia sit in museum collections, many never fully published. Fragments that once belonged to the same tablet are scattered across institutions and have never been matched. The goal here is to build an agent that proposes joins — "fragment X continues fragment Y" — and missing-line restorations, with confidence scores that a human curator can verify against the physical tablets.
 
 The current best method uses overlapping n-grams of cuneiform signs. There is room to do better: fuzzy matching for spelling variants and broken signs, parallel-version detection, and meaning-level similarity rather than exact sign runs.
