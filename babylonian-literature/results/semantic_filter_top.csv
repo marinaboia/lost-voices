@@ -1,0 +1,35 @@
+id,collection,period,genres,filter_score,confidence,tablet_hypothesis,signals,reasoning,atf_preview
+K.16024,Kuyunjik,Neo-Assyrian,"['CANONICAL', 'Literature', 'Narrative']",6,0.95,"Tablet XI, closing Uruk-wall passage (XI 323ff.), a verbatim repeat of Tablet I 13–20; the prologue of Tablet I cannot be excluded","e-li-ma ... 'go up on the wall of Uruk' (I 18 / XI 323); a-mur [dūršu] 'see its wall' (I 13); ša LUGAL ar₂-ku-u₂ 'that no later king can replicate' (I 17); te-me-na [hīṭ-ma] 'survey the foundation platform' (I 19 / XI 324); šum-ma [libittašu lā agurrat] 'if its brickwork is not kiln-fired' (I 20 / XI 325); Kuyunjik provenance, Neo-Assyrian script, canonical literary narrative genre; Catalogue description: Gilgamesh tablet 11","The preserved line-beginnings (e-li-ma, a-mur, ša LUGAL ar₂-ku-u₂, te-me-na, šum-ma) match the famous Uruk-wall passage of the SB prologue in sequence (I 13–20). That passage is repeated verbatim at the end of Tablet XI (XI 323–325). The provenance (Kuyunjik), script (Neo-Assyrian), genre (canonical literary narrative) and catalogue description ('Gilgamesh tablet 11') all converge. Tablet I and Tablet XI share these lines, so the exact tablet is ambiguous, but the catalogue attribution to XI is plausible.","1'. e#-li-[ma ...]
+#tr.en: Go up […]
+// cf. L I.4 SB ""I"" 18
+2'. a-mur %n [dūršu ša kīma qê nipšu?]
+#tr.en: See [its wall which is like a @i{strand of wool}]
+// L I.4 SB ""I"" 13
+3'. ša LUGAL a[r₂-ku-u₂ %n lā umaššalu (amēlu) mamma]
+#tr.en: That [no] later king [can replicate, (nor any man).]
+// L I.4 "
+K.15145,Kuyunjik,Neo-Babylonian,"['CANONICAL', 'Literature', 'Narrative']",5,0.9,"Tablet I, lines 12–17 (prologue: the walls of Uruk and Eanna)","qu]d-du-ši š[u-tum₄-mi el-li₃] – Eanna the holy storehouse; ki-ma qe₂-e [ni-ip-šu] – wall like a strand of wool; sa-me-ta ša₂ [la u₂-maš-ša₂-lu] – parapet none can equal; {giš}KU]N₄ ša₂ ul-tu ul-la-nu – threshold from olden times; šu-[bat {d}15] – dwelling of Ishtar; LUGAL ar₂-ku-u₂ la u₂-maš-ša₂-lu – refrain 'no later king can equal'; Kuyunjik provenance, literary narrative genre","Though heavily restored, the preserved signs (qu]d-du-ši, ki-ma qe₂-e, sa-me-ta, {giš}KU]N₄, šu-[bat, u₂-[maš-ša₂-lu) match the prologue of SB Gilgamesh Tablet I, lines 12–17, in exact sequence. That passage describes Eanna the holy storehouse, the wall like a strand of wool, the parapet no one can equal, the ancient threshold, and 'no later king can equal'. The line-by-line fit, the Kuyunjik provenance, the Babylonian script (Babylonian-script copies are known from Nineveh) and the literary/narrative tag all converge. The main caveat is that the restorations depend on the identification, but the surviving fragments are distinctive enough to be convincing.","1'. [ša₂ e₂-an-na qu]d-du#-ši# š[u-tum₄-mi el-li₃]
+2'. [a-mur du-ur-šu₂] ša₂ ki-ma qe₂-e# [ni-ip-šu?]
+3'. [i-tap-la-a]s sa#-me-ta ša₂ [la u₂-maš-ša₂-lu mam-ma]
+4'. [ṣa-bat-ma {giš}KU]N₄ š[a₂ ul-tu ul-la-nu]
+5'. [qit-ru-ub ana e₂-an-n]a šu#-[bat {d}15]
+6'. [ša₂ LUGAL ar₂-ku-u₂ l]a u₂#-[maš-ša₂-lu LU₂"
+K.19276,Kuyunjik,Neo-Assyrian,[],8,0.6,possibly Tablet II–III (speeches addressed to Gilgamesh about the Cedar Forest expedition) or Tablet V,"{d}GIŠ-gim₂-maš (twice, Ninevite spelling); [M]U-ar₂ ana {d}GIŠ-gim₂-[maš] – speech-introduction formula; mi-na-a (mīnâ, 'what') – likely direct speech; [{giš}TIR? {giš}]EREN – cedar forest; Kuyunjik provenance, Neo-Assyrian script; single ruling on obverse (atypical, slight caution)","The name Gilgamesh is written twice in the standard Ninevite spelling {d}GIŠ-gim₂-maš. Line 6' '[M]U-ar₂ ana {d}GIŠ-gim₂-[maš]' (izakkar ana Gilgameš) matches the epic's speech-introduction formula, and line 7' 'mīnâ' fits a following direct speech. The reverse likely reads [{giš}TIR {giš}]EREN, the cedar forest, which points to the Cedar Forest episodes. Kuyunjik provenance and Neo-Assyrian script support attribution, but the single ruling mid-obverse, the reference to a dais (BARA₂) and the heavily broken context leave open a related text such as a commentary, an excerpt or another composition naming Gilgamesh.","@obverse
+1'. [...] x x [x x]
+2'. [... {d}GIŠ-gi]m₂-maš x [x x]
+3'. [...] TUR ša₂? [x x]
+4'. [...] MAŠ?# U₂# AŠ? [x x]
+$ single ruling
+5'. [...] x x ka-a-ar ina BARA₂# ri-[x x]
+#note: @akk{[...] x x ka-a IGI-MIN-šu₂ x x x [...]} (ARG Folio 114).
+6'. [... M]U-ar₂# ana {d}GIŠ-gim₂-[maš]
+7'. [...] mi#-n"
+K.21863,Kuyunjik,Neo-Assyrian,"['CANONICAL', 'Literature', 'Narrative', 'Gilgameš']",6,0.6,"possibly Tablet VI, Gilgamesh's address to Ishtar (alternatively Tablet X, Siduri)",repeated 2nd person feminine suffix -ki at line ends; possible -bal-lu / -ul-lu ending; Kuyunjik provenance; Neo-Assyrian script; eBL genre tag CANONICAL Literature Narrative Gilgameš,"The text itself is tiny: only line-endings survive, with no names or diagnostic vocabulary. The repeated 2nd-person feminine suffix -ki (-be-ki, -ši-ki, -ik-ki) shows a speech addressed to a woman or goddess. In Gilgamesh this fits Gilgamesh's rejection of Ishtar in Tablet VI, where many line-endings carry -ki, and less likely addresses to Siduri or Ninsun. The Kuyunjik provenance, Neo-Assyrian script and the eBL 'CANONICAL … Gilgameš' tag point towards an existing identification. However, the textual evidence alone could not distinguish Gilgamesh from any other literary text or prayer addressed to a female figure, so confidence is only moderate.","1'. [... u]l?/ba]l?-lu
+2'. [...-b]e-ki
+3'. [...] x-ši?#-ki
+4'. [...]-a#/e#/dan#-nu
+5'. [...-i]k?-ki
+6'. [...] x"
+K.16980,Kuyunjik,Neo-Assyrian,[],8,0.35,possibly Tablet I (dream interpretation of Enkidu's steppe birth) or Tablets VII–VIII (Enkidu's fate and lament),"EDIN al-du = ša ina ṣēri aldu, epithet suited to Enkidu; ši-ma-t[u₂] (šīmātu, fates); possible [i-s]in-nu; Kuyunjik provenance; Neo-Assyrian script","The fragment is very small, but line 2 preserves 'EDIN al-du' (ša ina ṣēri aldu, 'who was born in the steppe'). The editor's note links this to Enkidu, whose steppe origin is a recurring epithet in the epic (e.g. Tablet I, 'born in the steppe, the hills reared him'). Line 1's 'šīmātu' (fates) fits the epic's themes of destiny and death, and the Kuyunjik Neo-Assyrian provenance is favourable. However, no name survives, and similar phrasing could occur in other literary or incantation texts, so the match stays tentative.","1. [... i?-s]in-nu ši-ma-t[u₂? ...]
+2. [...] x EDIN al-du [...]
+#note: @i{ša ina ṣēri aldu} = Enkidu? [AG]"

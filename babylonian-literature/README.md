@@ -78,12 +78,69 @@ Each fragment is a JSON object with:
 
 Standard format used by both eBL and CDLI. Lines starting with `@` are structural markers (obverse, reverse, column). Sign transliterations use subscript numbers for disambiguation (`U₄`, `KAM₂`). `#` marks uncertain readings; `x` marks unreadable signs.
 
+## What we know about the dataset
+
+An initial pass over the full 23,289-fragment eBL dataset found:
+
+| Signal | Fragment count |
+|--------|---------------|
+| Kuyunjik provenance (Assurbanipal's library) | 15,538 |
+| Literature or Narrative genre tag | ~1,750 |
+| Gilgamesh character name in ATF (`GIŠ-gim`, `en-ki-du`, `hum-ba-ba`, …) | 41 |
+| Name signal + Kuyunjik + Literature genre | 24 (highest priority) |
+
+None of the 23,289 fragments have an explicit Gilgamesh genre tag — they haven't been placed yet. The 41 with character-name matches include some false positives: a name can appear in a medical or divination context with no narrative connection. That's exactly the problem a semantic reasoning step is designed to solve.
+
 ## Pipeline
 
-1. **Calibrate** — hide the 1,250 known joins already in eBL and see how many the agent rediscovers. Establishes a real precision/recall baseline.
-2. **Match** — run across all unassigned fragments, score candidates.
-3. **Propose** — output top 20–50 joins with confidence scores.
-4. **Verify** — send to Enrique Jiménez (eBL team, LMU Munich) to check against physical tablets.
+### Step 0 — semantic pre-filter (LLM reasoning)
+
+**Script: `semantic_filter.py`**
+
+The first pass uses Claude to reason about whether a fragment could plausibly belong to Gilgamesh at all. The model sees:
+
+- The fragment's full ATF transliteration and provenance metadata
+- A system prompt describing all 12 tablets, character spellings, vocabulary, themes, and sample lines from the canonical text
+- A prompt asking it to score 0–1 and explain its reasoning
+
+The script runs the [Batches API](https://docs.anthropic.com/en/docs/messages-batches) for bulk processing (50% cost discount + prompt caching on the shared Gilgamesh context, which is stable across all requests). For small test runs it falls back to sequential streaming calls.
+
+```bash
+pip install anthropic
+export ANTHROPIC_API_KEY=...
+
+# Quick test on 20 fragments (sequential, fast)
+python semantic_filter.py --sample 20 --sequential
+
+# Full run on all candidates (batches API, ~$2–5 for ~1000 fragments)
+python semantic_filter.py
+
+# Resume a previously submitted batch
+python semantic_filter.py --resume BATCH_ID
+```
+
+Output: `results/semantic_filter_results.json` (all annotated candidates) and `results/semantic_filter_top.csv` (those above the confidence threshold).
+
+### Step 1 — calibrate
+
+Hide the 1,250 known joins already in eBL and use them as a ground-truth benchmark to evaluate matching quality. Establishes a real precision/recall baseline before running on unknown fragments.
+
+### Step 2 — match
+
+Take the semantic-filter shortlist and match each fragment against the known gaps in all 12 tablets. Matching strategies to explore:
+
+- **LLM-based alignment** — ask the model to position a fragment within a specific tablet passage, reasoning about formulaic language, line structure, and gap markers
+- **Fuzzy sign matching** — tolerate spelling variants, uncertain readings (`#`), and broken signs (`x`) that exact string matching would miss
+- **Parallel-version detection** — Gilgamesh exists in multiple manuscript traditions; a fragment might match a known variant rather than the canonical text
+- **Semantic embedding similarity** — represent both fragment and known gaps as vectors; measure closeness in meaning-space rather than sign-space
+
+### Step 3 — propose
+
+Output the top 20–50 join candidates with confidence scores, reasoning, and the specific gap they would fill.
+
+### Step 4 — verify
+
+Send proposals to Enrique Jiménez (eBL team, LMU Munich) to check against the physical tablets in the British Museum.
 
 ## Sources
 
