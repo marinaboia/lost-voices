@@ -109,6 +109,16 @@ After checking Tablets II through VI, the model found a plausible fit only in **
 
 Tablet V line 116 is Humbaba's famous taunt: *"Gilgamesh, you fool — why have you come before me?"* It is one of the most recognisable lines in the epic.
 
+### What this placement would and would not contribute
+
+Lines 115–116 are **not lost** — they already survive in UrkNB1, the Neo-Babylonian witness from Uruk. Placing K.19276 would not add new text to the epic. The contribution is narrower but still meaningful:
+
+- **A second witness** — K.19276 would be the first Kuyunjik (Nineveh) copy of these two lines, allowing comparison between the Nineveh and Uruk scribal traditions for the same passage.
+- **Textual variants** — any spelling differences between the two traditions (e.g. `MU-ar₂` vs `MU-ra`) are of interest to editors of the text.
+- **Closing an open question** — George catalogued this fragment as ZZ (suspected Gilgamesh, position unknown) over twenty years ago. Confirming its placement resolves that.
+
+The broken lines 1′–4′ fall within the completely-lost gap V 107–114, but they are too damaged on the fragment to yield readable new text.
+
 ### Caveats
 
 - The placement rests on two short sequences (the speech formula and *mīnâ*) and one unexplained line (5′).
