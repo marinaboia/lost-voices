@@ -1,2 +1,4 @@
-babylonian-literature/data/
+babylonian-literature/data/*
+!babylonian-literature/data/images/
 .env
+.DS_Store

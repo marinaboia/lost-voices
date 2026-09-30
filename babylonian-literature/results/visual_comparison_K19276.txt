@@ -1,0 +1,46 @@
+# Observations on K.19276 and K.3252 + K.8561
+
+Several things I can see in the photos don't match the ATF description you provided, so I've flagged them first.
+
+## Discrepancies
+
+- **The second fragment's label reads "K.8561", not K.8591.** It is clearly written on the bottom edge view in Image 2. Please check which number your source intends.
+- **The size is not ~2 cm.** Using the BM scale bar (0–2 cm ≈ 210 px), the fragment measures roughly **4.5 × 5.5–6 cm**. This assumes both views were shot at the scale shown, which is standard for BM photos.
+- **The inscribed side appears to be the bottom photo, not the top.** The top view, which carries the ink number "K 19276", is almost entirely abraded. The legible cuneiform and the ruling are on the bottom view. Either the labels in your notes are swapped, or the obverse is effaced.
+
+## Your questions
+
+**1. Visible lines on the "obverse" (top view):**
+Essentially none are legible. There is a faint band of possible wedge traces on the left, about two-thirds of the way down, which might be 1–2 lines at most. The bottom view shows about **3–4 lines**: traces above a ruling, then 2–3 lines below it. I cannot see ~9 lines on either face.
+
+**2. Horizontal ruling:**
+- Top view: I see none. The thin dark lines there look like cracks.
+- Bottom view: **yes**, there is a clear horizontal ruling in the upper-middle of the inscribed area, with sign traces above it (upper right) and lines of text below it.
+
+**3. Script style compared with K.3252:**
+Broadly compatible. Both show small, neat Neo-Assyrian ductus. The line spacing on K.19276 is about 0.4–0.45 cm, which is close to K.3252's roughly 0.45 cm.
+
+However:
+- The fabric color differs noticeably: reddish-orange versus grayish-buff. This could come from lighting or firing, so it isn't decisive.
+- The surface is too worn to compare individual sign forms reliably.
+- "Similar Kuyunjik hand" is very weak evidence for assigning a fragment to a particular manuscript.
+
+**4. Size versus ~9 lines (lines 107–116):**
+- The fragment could physically hold about 9 lines at this line height, since that needs only about 4 cm.
+- But the surviving inscribed surface preserves only about 3–4 lines.
+- A ruling between lines 4′ and 5′ would be unusual in the middle of the Tablet V narrative, where rulings typically mark sections or ten-line intervals depending on the scribe. That point needs checking against the edition.
+
+**5. Legible signs:**
+I can't confidently identify any signs from these images.
+- Below the ruling there are horizontal and vertical wedge clusters, but not clearly enough to read.
+- The large oblique impression lower left looks like a damage gouge or a single deep wedge, not a diagnostic sign.
+- I cannot confirm "Gilgamesh" (ᵈGIŠ.GÍN.MAŠ), a speech formula, "mi-na-a", or "cedar forest" (GIŠ.ERIN) signs.
+
+Readings like those would need collation from the original or a high-resolution RTI/3D scan.
+
+## Bottom line
+
+The photos don't independently support the proposed ATF or its placement. I'd recommend:
+- Verifying the obverse/reverse orientation.
+- Checking the join number (K.8561).
+- Comparing directly against George 2003's manuscript sigla and the eBL (electronic Babylonian Library) fragmentarium entry for K.19276, which may already have a proposed identification.

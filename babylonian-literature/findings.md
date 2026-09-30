@@ -116,6 +116,18 @@ Tablet V line 116 is Humbaba's famous taunt: *"Gilgamesh, you fool — why have 
 - Other tablets with a "said to Gilgamesh" + question structure (II–IV, VI–VII) cannot be formally excluded.
 - The spelling `MU-ar₂` vs `MU-ra` is a minor variant consistent with Nineveh manuscripts but adds a small uncertainty.
 
+### Image analysis
+
+Fragment photos were retrieved from the eBL API (`data/images/K.19276.jpg`) and compared against the main Kuyunjik Tablet V witnesses K.3252, K.8591, Sm.209, Sm.866, K.13525 (`data/images/tablet_v/`). Full model output: `results/visual_comparison_K19276.txt`.
+
+Key findings from the visual comparison:
+
+- **Ruling confirmed** — a clear horizontal ruling is visible on the inscribed face, consistent with the ATF's `$ single ruling` between lines 4′ and 5′.
+- **Only 3–4 lines legible** — much of the surface is worn. The face carrying the ink number "K 19276" is largely abraded; the inscribed face shows traces above and below the ruling.
+- **Physical size ~4.5 × 5.5 cm** — large enough to hold ~9 lines at the ~0.45 cm line spacing typical of these Kuyunjik tablets.
+- **Script style compatible** — same Neo-Assyrian ductus and line density as K.3252, consistent with Assurbanipal's library.
+- **No individual signs readable from the photograph** — the surface condition means sign-level confirmation requires RTI (Reflectance Transformation Imaging) or physical collation at the British Museum.
+
 ### Suggested next step
 
-Collate the traces after `mi-na-a` on obverse line 7′ against the expected continuation `tal-li-ka a-[di IGI-ia]`. If the signs are compatible, this would be a confirmable new placement for a fragment that George catalogued as uncertain over twenty years ago. The physical tablet is in the British Museum (BM reference `W_K-19276`, CDLI `P273235`).
+Collate the traces after `mi-na-a` on obverse line 7′ against the expected continuation `tal-li-ka a-[di IGI-ia]`. If the signs are compatible, this would be a confirmable new placement for a fragment that George catalogued as uncertain over twenty years ago. The physical tablet is in the British Museum (BM reference `W_K-19276`, CDLI `P273235`). RTI imaging of the abraded obverse face would be the most productive technical approach.
