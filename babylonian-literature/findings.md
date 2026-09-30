@@ -45,7 +45,7 @@ Scores below 0.35 represent fragments where the model found only generic literar
 
 **K.19276 is the most interesting result.** See the placement study below.
 
-**K.21863** is tagged `Gilgameš` in eBL genres and noted "Gilg VII?" but never formally placed. The model disagreed on the tablet — it read the repeated feminine suffix `-ki` as Tablet VI (Gilgamesh addressing Ishtar) rather than VII. Worth adjudicating.
+**K.21863** is tagged `Gilgameš` in eBL genres and noted "Gilg VII?" but never formally placed. See placement study below.
 
 ## Next steps — pilot study
 
@@ -174,3 +174,40 @@ The check is narrow: can the traces after `mi-na-a` on line 7′ be read as `tal
 UrkNB1 is from Uruk, southern Babylonia, Neo-Babylonian period — a different scribal tradition from Assurbanipal's Nineveh library. K.19276 would be the first Kuyunjik copy of this passage, allowing scholars to compare the two regional versions of Humbaba's taunt for the first time.
 
 The physical tablet is held at the British Museum (BM reference `W_K-19276`, CDLI `P273235`).
+
+---
+
+## K.21863 — placement study
+
+**Script:** `place_fragment.py`  
+**Tablets checked:** VI, VII  
+**Full output:** `results/placement_K_21863.json`
+
+### Fragment
+
+```
+1'. [... u]l?/ba]l?-lu
+2'. [...-b]e-ki
+3'. [...] x-ši?#-ki
+4'. [...]-a#/e#/dan#-nu
+5'. [...-i]k?-ki
+6'. [...] x
+```
+
+### Diagnostic feature
+
+Three of five lines end in `-ki` — the 2nd person feminine singular suffix in Akkadian. The fragment must come from a speech addressed to a woman or a grammatically feminine noun (e.g. *daltu* "door", *qištu* "forest"). The specific sequence across five lines is `-lu / -be-ki / -ši-ki / -nu / -ik-ki`.
+
+### Result: no placement found in either tablet
+
+**Tablet VI** — checked all three feminine-address passages: Gilgamesh's rejection of Ishtar (ll. 24–79), Anu's reply (ll. 89–91), and Enkidu's taunt (ll. 156–157). All are well-preserved at line-end. None produce the required sequence. The `-ki` endings in Tablet VI are isolated rather than clustered across consecutive lines.
+
+**Tablet VII** — checked Enkidu's address to the cedar door (ll. 39–63), the curse of Šamhat (ll. 102–131), and the blessing of Šamhat (ll. 151–161). The most tempting alignment (line 4′ = VII 115 ending *-nu*, line 5′ = VII 116 ending *-ki*) fails because VII 116 ends in *-bu-ki*, not *-ik-ki*, and the surrounding lines also do not match.
+
+### Where it might sit
+
+The fragment could only fit in a wholly-lost stretch of Tablet VII — most plausibly **lines 2–35**, which precede the preserved door speech and are almost entirely unattested. The dense cluster of `-ki` endings is consistent with the character of Enkidu's door address, but there is nothing positive to confirm it, only the absence of contradiction.
+
+### Assessment
+
+Weaker result than K.19276. K.19276 produced a specific line match with a testable prediction; K.21863 points only toward a gap where confirmation is currently impossible. The fragment is almost certainly Gilgamesh (eBL genre tag, feminine-suffix pattern consistent with the epic's second half), but its precise location cannot be determined from surviving text alone.
