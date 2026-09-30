@@ -47,6 +47,8 @@ Scores below 0.35 represent fragments where the model found only generic literar
 
 **K.21863** is tagged `Gilgameš` in eBL genres and noted "Gilg VII?" but never formally placed. See placement study below.
 
+**K.16980** scored 0.35 — below the default threshold — yet produced the clearest placement result of the three. See placement study and discussion of what this reveals about the semantic filter below.
+
 ## Next steps — pilot study
 
 The three genuinely unplaced fragments warrant a closer look:
@@ -211,3 +213,51 @@ The fragment could only fit in a wholly-lost stretch of Tablet VII — most plau
 ### Assessment
 
 Weaker result than K.19276. K.19276 produced a specific line match with a testable prediction; K.21863 points only toward a gap where confirmation is currently impossible. The fragment is almost certainly Gilgamesh (eBL genre tag, feminine-suffix pattern consistent with the epic's second half), but its precise location cannot be determined from surviving text alone.
+
+---
+
+## K.16980 — placement study
+
+**Script:** `place_fragment.py`  
+**Tablets checked:** I, VII, VIII  
+**Full output:** `results/placement_K_16980.json`
+
+### Fragment
+
+```
+1. [... i?-s]in-nu ši-ma-t[u₂? ...]
+2. [...] x EDIN al-du [...]
+   #note: ša ina ṣēri aldu = Enkidu? [AG]
+```
+
+Andrew George's own note in the eBL record already flagged line 2 as a possible Enkidu epithet. The eBL record carried a "cf. Gilg I 222-223" note but no formal placement.
+
+### Result: Tablet I, lines 220–221
+
+All three tablet analyses converged independently on the same passage: **Tablet I lines 220–221**, Enkidu's boast to Šamhat before setting out for Uruk.
+
+The diagnostic element is line 2: `EDIN al-du` = *ina ṣēri aldu* = "born in the wild" — Enkidu's defining epithet, appearing here in his self-description as he prepares to challenge Gilgamesh. Line 1's *šīmātu* ("destinies") matches the immediately preceding line, where Enkidu declares he will go to Uruk and "change the destinies" of the city.
+
+| Fragment line | Proposed = Tablet I line | Alignment |
+|---|---|---|
+| 1 | I 220 | *šīmātu* matches NinNA1a v 22 and NinNA3 v 2; both mark the MA as doubtful — a third witness with a clean reading would be useful |
+| 2 | I 221 | `EDIN al-du` matches *[ša i-n]a ṣēri iʾʾaldu* in NinNA1a v 23 directly; `al-du` is a spelling variant of `iʾ-al-du`, the same alternation seen at Tablet I line 47 |
+
+The scholar's note "cf. Gilg I 222-223" was essentially correct — the two-line offset is probably from an older edition.
+
+### Textual contribution
+
+K.16980 would be a third Kuyunjik witness to Tablet I lines 220–221. The spelling `al-du` (vs `iʾ-al-du` in both existing copies) is a minor variant worth noting in a future edition. The passage is not lost — it survives in NinNA1a and NinNA3 — so this fragment adds a witness rather than new text.
+
+One unresolved discrepancy: the sign before *šīmātu* on line 1 is tentatively read as `[i?-s]in-nu` ("festival") in the eBL, but NinNA1a has `-um-ma` in that position. Physical collation would resolve whether this is a genuine variant, a misread, or a different line layout.
+
+### What this reveals about the semantic filter
+
+K.16980 scored **0.35** in the semantic filter — below the default 0.35 threshold and the lowest of the three unplaced fragments. Yet it produced the clearest placement result: all three checks converged without ambiguity.
+
+The reason is that the semantic filter and placement analysis measure different things:
+
+- The **semantic filter** asks whether the fragment *looks like Gilgamesh* from its broken text alone. K.16980 has only two damaged lines. Even `EDIN al-du` ("born in the steppe") is plain enough to appear in other literature; without more context the model hedged.
+- The **placement analysis** asks whether the fragment *matches a specific passage* when compared line by line against the canonical text. Here the answer was unambiguous — *šīmātu* on one line immediately followed by *ina ṣēri aldu* on the next is highly specific.
+
+**Implication:** short, broken fragments will systematically score lower in the semantic filter even if their few preserved signs are actually quite diagnostic when compared directly against the gaps. The 0.35 cutoff likely filters out some genuinely placeable fragments purely because they are small. A better approach for very short fragments (≤ 3 lines) might be to skip the semantic filter and run placement directly.
