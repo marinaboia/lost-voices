@@ -47,15 +47,17 @@ Scores below 0.35 represent fragments where the model found only generic literar
 
 ## Pilot study — summary of contributions
 
-We ran `place_fragment.py` on the three unplaced candidates. Results:
+We ran `place_fragment.py` on five fragments (the three unplaced candidates from the top results, plus the next two by score). Results:
 
-| Fragment | Prior status | Placement result | Contribution |
-|---|---|---|---|
-| **K.19276** | George's ZZ — suspected Gilgamesh, no hypothesis | Proposed: **Tablet V 115–116** (Humbaba's taunt) | New specific hypothesis with testable prediction; first proposed Kuyunjik witness to this passage |
-| **K.21863** | "Gilg VII?" note, unanalysed | No fit in preserved portions of Tablets VI or VII | Ruled out all known feminine-address passages; likely in lost stretch of Tablet VII (ll. 2–35) |
-| **K.16980** | "cf. Gilg I 222-223" note, unplaced | Confirmed: **Tablet I 220–221** (Enkidu's boast) | Validates and sharpens an existing informal note; adds `al-du` spelling variant; third Kuyunjik witness |
+| Fragment | Score | Prior status | Placement result | Contribution |
+|---|---|---|---|---|
+| **K.19276** | 0.60 | George's ZZ — suspected Gilgamesh, no hypothesis | Proposed: **Tablet V 115–116** (Humbaba's taunt) | New specific hypothesis with testable prediction; first proposed Kuyunjik witness to this passage |
+| **K.21863** | 0.60 | "Gilg VII?" note, unanalysed | No fit in preserved portions of Tablets VI or VII | Ruled out all known feminine-address passages; likely in lost stretch of Tablet VII (ll. 2–35) |
+| **K.16980** | 0.35 | "cf. Gilg I 222-223" note, unplaced | Confirmed: **Tablet I 220–221** (Enkidu's boast) | Validates and sharpens an existing informal note; adds `al-du` spelling variant; third Kuyunjik witness |
+| **BM.54325** | 0.30 | Scored as possible Gilgamesh XI/XII | Not SB Gilgamesh at all | Sumerian GEN manuscript (prologue ll. 4–34); wrong language; provenance label also questionable |
+| **K.23044** | 0.30 | Possible Tablet XI or Humbaba passage | Too little text to place | Single word *abūbi* + one illegible sign; best candidate is Tablet XI:14 but unconfirmable without collation |
 
-K.19276 is the most actionable result: a specific, falsifiable placement hypothesis for a fragment George catalogued as unplaceable for over twenty years. Detailed studies for each fragment follow below.
+K.19276 is the most actionable result: a specific, falsifiable placement hypothesis for a fragment George catalogued as unplaceable for over twenty years. Below score ~0.30 the fragments either belong to other compositions or preserve too little text to place. Detailed studies for each fragment follow below.
 
 ## Next steps — pilot study
 
@@ -269,3 +271,64 @@ The reason is that the semantic filter and placement analysis measure different 
 - The **placement analysis** asks whether the fragment *matches a specific passage* when compared line by line against the canonical text. Here the answer was unambiguous — *šīmātu* on one line immediately followed by *ina ṣēri aldu* on the next is highly specific.
 
 **Implication:** short, broken fragments will systematically score lower in the semantic filter even if their few preserved signs are actually quite diagnostic when compared directly against the gaps. The 0.35 cutoff likely filters out some genuinely placeable fragments purely because they are small. A better approach for very short fragments (≤ 3 lines) might be to skip the semantic filter and run placement directly.
+
+---
+
+## BM.54325 — placement study
+
+**Script:** `place_fragment.py`  
+**Tablets checked:** XI, XII  
+**Full output:** `results/placement_BM_54325.json`
+
+### Fragment
+
+18 lines of Sumerian (`%sux`) on the obverse and 4 on the reverse, ending with a ruling and blank surface. Every line carries an editorial note identifying it as *Gilgameš, Enkidu and the Netherworld* (GEN):
+
+- Obverse: GEN lines 4–22 (cosmogonic prologue — separation of heaven and earth, Ereškigal given the netherworld, Enki's voyage)
+- Reverse: GEN lines 31–34 (the *ḫuluppu* tree rescued from the Euphrates, carried to Uruk)
+
+### Result: not Standard Babylonian Gilgamesh
+
+The fragment is a Sumerian manuscript, not Akkadian. Tablet XI is entirely Akkadian with no bilingual sections; Tablet XII is an Akkadian translation of only the *second half* of GEN (from line 172 onward — the *pukku* and *mikkû* falling into the netherworld). The prologue preserved here (GEN 4–34) was never translated into the SB series.
+
+The tablet ending mid-text (GEN 34, with the rest blank) suggests a **school extract**, not a section of a full multi-column manuscript.
+
+The model also flagged a provenance question: "BM.54xxx" numbers typically belong to the 1882 Sippar/Babylon acquisitions (Rassam collection), not the Kuyunjik "K." or "Sm." series. The eBL provenance label should be verified against the museum register.
+
+### Assessment
+
+Wrong composition for our purposes. BM.54325 should be catalogued under the Sumerian Gilgamesh corpus (GEN), not the SB epic. The semantic filter scored it 0.30 because it contains genuine Gilgamesh vocabulary, but the language mismatch rules it out entirely.
+
+---
+
+## K.23044 — placement study
+
+**Script:** `place_fragment.py`  
+**Tablets checked:** II, V, XI  
+**Full output:** `results/placement_K_23044.json`
+
+### Fragment
+
+```
+1'. [...] a#-bu-bi x [...]
+$ rest of side broken
+```
+
+A single damaged line. The only secure reading is **a-bu-bi** — the genitive of *abūbu*, "Deluge" — followed by one unidentified sign.
+
+### Result: possible Tablet XI:14, unconfirmable
+
+*abūbu* is one of the most common words in the epic (Tablets I, II, V, XI, plus Atrahasis and Erra), so one occurrence proves very little. However, the genitive form *abūbi* (rather than the nominative *abūbu*) narrows the field. Across all three tablets checked, the model found one candidate where the genitive, the following sign, and the absence of a Kuyunjik witness all align:
+
+**Tablet XI, line 14:** `[ana šakān] a-bu-bi u[b-la libbašunu ilū rabûtu]`  
+*"The great gods resolved in their hearts to send the Deluge."*
+
+- NinNA2b already has `a-bu-b[i]` at this line; K.23044 is not that manuscript.
+- NinNA1 has a break covering exactly *ana šakān abūbi ubla* — a join is physically conceivable.
+- The unidentified trace after *bi* could be the beginning of *ub* (*ubla*).
+
+A secondary candidate: **Tablet V, line 135** (`[šapār] a-bu-bi iš-[tuhhu lapātu]` — "to send the Deluge is to crack the whip"), where no Ninevite witness survives at all.
+
+### Assessment
+
+Too little text to reach a conclusion. One word plus one illegible sign cannot distinguish between multiple plausible tablets, let alone rule out other compositions. Collation of the trace after *bi* and comparison with NinNA1 column i would be the minimum needed to test the Tablet XI:14 hypothesis.
