@@ -43,11 +43,19 @@ Scores below 0.35 represent fragments where the model found only generic literar
 
 **The top two results validate the approach.** K.16024 and K.15145 are both already known Gilgamesh fragments — the model identified them correctly and matched them to specific line ranges without being told. Our pre-filter missed them because the identification was in the `description` and `notes` fields rather than `traditional_reference` (now fixed for future runs).
 
-**K.19276 is the most interesting result.** See the placement study below.
+**K.16980** scored 0.35 — below the default threshold — yet produced the clearest placement result of the three. Short fragments are systematically underscored by the semantic filter even when their few preserved signs are highly diagnostic. See placement study below.
 
-**K.21863** is tagged `Gilgameš` in eBL genres and noted "Gilg VII?" but never formally placed. See placement study below.
+## Pilot study — summary of contributions
 
-**K.16980** scored 0.35 — below the default threshold — yet produced the clearest placement result of the three. See placement study and discussion of what this reveals about the semantic filter below.
+We ran `place_fragment.py` on the three unplaced candidates. Results:
+
+| Fragment | Prior status | Placement result | Contribution |
+|---|---|---|---|
+| **K.19276** | George's ZZ — suspected Gilgamesh, no hypothesis | Proposed: **Tablet V 115–116** (Humbaba's taunt) | New specific hypothesis with testable prediction; first proposed Kuyunjik witness to this passage |
+| **K.21863** | "Gilg VII?" note, unanalysed | No fit in preserved portions of Tablets VI or VII | Ruled out all known feminine-address passages; likely in lost stretch of Tablet VII (ll. 2–35) |
+| **K.16980** | "cf. Gilg I 222-223" note, unplaced | Confirmed: **Tablet I 220–221** (Enkidu's boast) | Validates and sharpens an existing informal note; adds `al-du` spelling variant; third Kuyunjik witness |
+
+K.19276 is the most actionable result: a specific, falsifiable placement hypothesis for a fragment George catalogued as unplaceable for over twenty years. Detailed studies for each fragment follow below.
 
 ## Next steps — pilot study
 
