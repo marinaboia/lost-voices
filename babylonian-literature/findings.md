@@ -128,6 +128,39 @@ Key findings from the visual comparison:
 - **Script style compatible** — same Neo-Assyrian ductus and line density as K.3252, consistent with Assurbanipal's library.
 - **No individual signs readable from the photograph** — the surface condition means sign-level confirmation requires RTI (Reflectance Transformation Imaging) or physical collation at the British Museum.
 
-### Suggested next step
+### Suggested next steps
 
-Collate the traces after `mi-na-a` on obverse line 7′ against the expected continuation `tal-li-ka a-[di IGI-ia]`. If the signs are compatible, this would be a confirmable new placement for a fragment that George catalogued as uncertain over twenty years ago. The physical tablet is in the British Museum (BM reference `W_K-19276`, CDLI `P273235`). RTI imaging of the abraded obverse face would be the most productive technical approach.
+#### What we can already read
+
+Obverse line 7′ of K.19276 gives us: `[...] mi#-na#-a# x x x a x [x x]`
+
+`mi-na-a` is Akkadian *mīnâ* — "why?" The signs after it are present but unreadable from the photograph because the clay surface is abraded.
+
+#### What the proposed placement predicts
+
+If this is Tablet V line 116 — Humbaba's taunt — the full line should read:
+
+> `[lim-tal-ku lil-lu {d}GIŠ-gim₂-maš nu-ʾ-u₂ a-me-lu] mi-na-a tal-li-ka a-di IGI-ia`
+> *"You fool, Gilgamesh, you ignorant man — why have you come before me?"*
+
+The traces after `mi-na-a` should therefore spell `tal-li-ka a-di IGI-ia` (or a close orthographic variant). The one sign the ATF transcriber *did* recover — the `a` in `mi-na-a x x x **a** x` — is consistent with the `a` of `a-di` ("before"), which is exactly where it would fall.
+
+#### Why the photo is not enough
+
+Cuneiform is pressed into clay; it is relief, not ink. When the surface weathers over 2,700 years the wedge impressions become shallower and vanish from normal photographs. The eBL image confirms the tablet exists and has lines, but individual sign shapes are lost.
+
+#### Two routes to confirmation
+
+**1. RTI imaging** — Reflectance Transformation Imaging takes ~50 photos under a light source moved to different positions around the tablet, then algorithmically combines them. Raking light at extreme angles casts tiny shadows into even very shallow wedge impressions, making them readable again. This is now standard practice for abraded British Museum tablets and is the fastest route — no travel required if the BM conservation lab runs it.
+
+**2. Physical collation** — An Assyriologist examining the original tablet at the BM under a magnifying glass and raking lamp can sometimes read traces that do not photograph. George himself collated this fragment for his 2003 edition (his transliteration is in the eBL record). The question is whether anyone has returned to it with the Tablet V 115–116 hypothesis in mind.
+
+#### The specific test
+
+The check is narrow: can the traces after `mi-na-a` on line 7′ be read as `tal-li-[kam]`? The verbal form *tallikam* ("you have come") is highly specific — it appears in this exact phrasing in the Uruk witness (UrkNB1), currently the *only* known copy of these two lines. A match in the Kuyunjik tradition would be very difficult to explain otherwise.
+
+#### Why it matters
+
+UrkNB1 is from Uruk, southern Babylonia, Neo-Babylonian period — a different scribal tradition from Assurbanipal's Nineveh library. K.19276 would be the first Kuyunjik copy of this passage, allowing scholars to compare the two regional versions of Humbaba's taunt for the first time.
+
+The physical tablet is held at the British Museum (BM reference `W_K-19276`, CDLI `P273235`).
