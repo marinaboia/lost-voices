@@ -47,17 +47,25 @@ Scores below 0.35 represent fragments where the model found only generic literar
 
 ## Pilot study — summary of contributions
 
-We ran `place_fragment.py` on five fragments (the three unplaced candidates from the top results, plus the next two by score). Results:
+We ran `place_fragment.py` on 14 fragments — the five top unplaced candidates plus the next 9 by score. Results:
 
-| Fragment | Score | Prior status | Placement result | Contribution |
-|---|---|---|---|---|
-| **K.19276** | 0.60 | George's ZZ — suspected Gilgamesh, no hypothesis | Proposed: **Tablet V 115–116** (Humbaba's taunt) | New specific hypothesis with testable prediction; first proposed Kuyunjik witness to this passage |
-| **K.21863** | 0.60 | "Gilg VII?" note, unanalysed | No fit in preserved portions of Tablets VI or VII | Ruled out all known feminine-address passages; likely in lost stretch of Tablet VII (ll. 2–35) |
-| **K.16980** | 0.35 | "cf. Gilg I 222-223" note, unplaced | Confirmed: **Tablet I 220–221** (Enkidu's boast) | Validates and sharpens an existing informal note; adds `al-du` spelling variant; third Kuyunjik witness |
-| **BM.54325** | 0.30 | Scored as possible Gilgamesh XI/XII | Not SB Gilgamesh at all | Sumerian GEN manuscript (prologue ll. 4–34); wrong language; provenance label also questionable |
-| **K.23044** | 0.30 | Possible Tablet XI or Humbaba passage | Too little text to place | Single word *abūbi* + one illegible sign; best candidate is Tablet XI:14 but unconfirmable without collation |
+| Fragment | Score | Placement result | Notes |
+|---|---|---|---|
+| **K.19276** | 0.60 | Proposed: **Tablet V 115–116** | New hypothesis with testable prediction; first proposed Kuyunjik witness to Humbaba's taunt |
+| **K.21863** | 0.60 | No fit in Tablets VI or VII | Ruled out all feminine-address passages; likely in lost stretch of VII (ll. 2–35) |
+| **K.16980** | 0.35 | Confirmed: **Tablet I 220–221** | Validates existing "cf." note; `al-du` spelling variant; third Kuyunjik witness |
+| **BM.54325** | 0.30 | Not SB Gilgamesh | Sumerian GEN manuscript (ll. 4–34); wrong language entirely |
+| **K.23044** | 0.30 | Too little text to place | Single word *abūbi*; best candidate Tablet XI:14, unconfirmable |
+| **K.20164** | 0.22 | Not Gilgamesh | Atrahasis III — 4-column format + flood vocabulary (*uštašni*, *ūmu*, boat); Assurbanipal colophon after col. 4 rules out 6-column Gilgamesh series |
+| **K.10747** | 0.20 | Not Gilgamesh | Cultic love lyrics or processional hymn — plural boatmen, *MA₂ zakûti*, *ana GIG* don't belong in the epic |
+| **K.18214** | 0.20 | Not placed | `karaška` ("your belly/camp") fits neither X nor XI; possibly Tablet X OB Šiduri line but unconfirmable |
+| **K.13870** | 0.18 | Not Gilgamesh (all 12 tablets checked) | `kitamlak-ma`, `muštarû`, `gipu-` unattested across the entire SB corpus; almost certainly wisdom or advisory literature |
+| **K.15173** | 0.18 | Not Gilgamesh | Incantation or wisdom/disputation — KIMIN ditto signs, EN₂ rubric rule out narrative epic |
+| **BM.98688** | 0.18 | Not Gilgamesh | Fable or lament/hymn — hymnic epithet chain, `puršumu` ("old man"), `ibakki ṣarpiš` point away from the epic |
+| **K.16804** | 0.15 | Not Gilgamesh | BWL proverb collection quoting the triple-rope saying; wrong case, wrong layout |
+| **K.17196** | 0.15 | Not Gilgamesh | Wisdom/lament/hymnic — `pirištu kankat` + `urru ana mūšīti` match no Gilgamesh passage |
 
-K.19276 is the most actionable result: a specific, falsifiable placement hypothesis for a fragment George catalogued as unplaceable for over twenty years. Below score ~0.30 the fragments either belong to other compositions or preserve too little text to place. Detailed studies for each fragment follow below.
+**K.19276 is the most actionable result.** The effective floor for this dataset is around score 0.30: below that, fragments either belong to other compositions or preserve too little text to confirm. The one exception is K.16980 (0.35), which shows that short fragments are systematically underscored. Detailed studies for each fragment follow below.
 
 ## Next steps — pilot study
 
@@ -332,3 +340,43 @@ A secondary candidate: **Tablet V, line 135** (`[šapār] a-bu-bi iš-[tuhhu lap
 ### Assessment
 
 Too little text to reach a conclusion. One word plus one illegible sign cannot distinguish between multiple plausible tablets, let alone rule out other compositions. Collation of the trace after *bi* and comparison with NinNA1 column i would be the minimum needed to test the Tablet XI:14 hypothesis.
+
+---
+
+## Extended placement study — fragments scoring 0.15–0.22
+
+We ran `place_fragment.py` on the next 8 fragments by score. All returned negative results. Brief summaries below; full outputs in `results/`.
+
+### K.20164 (0.22) — not Gilgamesh; likely Atrahasis III
+
+Fragment has a colophon (`[{m}AN.ŠAR₂-D]U₃-A`, `[{kur}AN].ŠAR₂{ki}`) after what appears to be column 4 of a 4-column tablet. The Kuyunjik Gilgamesh series tablets are 6-column; the colophon would fall after column 6. This physical argument independently rules out Gilgamesh X and XI. The vocabulary (*ūmu*, *uštašni* Št-form of *šanû*, `{giš}MA₂`) fits a flood-onset narrative. The file note "Atrahasīs III?" is well-founded — a 4-column Neo-Assyrian Atrahasis copy with an Assurbanipal colophon is attested from Kuyunjik.
+
+### K.10747 (0.20) — not Gilgamesh; cultic love lyrics or processional hymn
+
+Has boat vocabulary (`{giš}MA₂`, `{lu₂}MA₂.LAH₄-MEŠ` plural boatmen, `{giš}MA₂ za-ku-ti` "pure/exempt boat") plus `ana GIG` ("to illness/the sick"). Tablet X has only one boatman (Ur-šanabi, always singular), no `zakûtu` boat, and no illness context. Tablet XI has no plural boatmen and no `zakûtu`. The combination of a pure boat, a crew, and illness fits Neo-Assyrian or Babylonian cultic love lyrics or processional hymns, where divine boats and healing pleas both occur. The file note "Love Lyrics?" is plausible.
+
+### K.18214 (0.20) — unplaced; not X or XI
+
+Key word is `ka-ra-aš₂-ka` — *karaška*, "your belly/camp" with a 2nd-person suffix. Tablet X always spells *karšu* as `kar-ši-` in the genitive (*ina karšīka*) and never uses the plene form with a 2nd-person suffix. Tablet XI has *karāšu* only in ll. 113/171/176, spelled `ka-ra-ši`, without a pronominal suffix and with no surrounding lines matching the fragment. The Babylonian OB Šiduri address (*lū malī karaška*, "let your belly be full") has a Standard Babylonian counterpart — if one exists — as a faint lead for Tablet X, but it is not confirmable.
+
+### K.13870 (0.18) — not Gilgamesh; all 12 tablets checked
+
+The most distinctive word is `ki-tam-lak-ma` — *kitamlak-ma*, the Gt imperative of *malāku*, "take counsel!" Also `muš-ta-ru-u` (Gt/Št participle) and `u₃ gi-pu-[...]`. None of these three words appears anywhere in the preserved SB Gilgamesh corpus across all 12 tablets. Every tablet was checked; column 2' line-beginnings were compared against all preserved and securely restorable line openings. No fit was found in any tablet.
+
+The fragment almost certainly belongs to another composition. `kitamlak-ma` is the most distinctive lexeme and the best search key — it is rare enough to narrow a search against other Kuyunjik literary, wisdom, or hymnic texts.
+
+### K.15173 (0.18) — not Gilgamesh; incantation or wisdom/disputation
+
+Shares the phrase "do not trust in your strength" (*ē tatkal ana emūqīka*) with Tablet III 2 // 216, but the differences are decisive: the negation is *ē* (vetitive) vs *lā* in all Tablet III witnesses; the verb form differs; the surrounding lines do not match. The obverse shows repeated KIMIN ("ditto") signs and an EN₂ ("incantation") rubric — genre markers foreign to any SB Gilgamesh narrative manuscript. "Do not trust in your strength" is a proverbial commonplace; the parallel is thematic, not textual.
+
+### BM.98688 (0.18) — not Gilgamesh; fable or lament/hymn
+
+Has `{giš}BANŠUR` (table), `i-bak-ki ṣar-pi[š]` ("wept bitterly"), a chain of hymnic epithets (`ālilu šūpû mutu muttaʾidu`), and `puršumu` ("old man"). The two BANŠUR passages in Gilgamesh (VII 114, VII 196) fail on the very next line. The weeping formula *ibakki ṣarpiš* is not the epic's normal formula (*marriš ibakki*, *hanṭiš harpiš illakā dimāšu*). Hymnic epithet chains and `puršumu` have no place in the known epic text. The editor's own "Fable?" note on line 3' is well-founded.
+
+### K.16804 (0.15) — not Gilgamesh; BWL proverb collection
+
+Shares the triple-rope saying with Tablet V 79 (*ašlu šušlušu*, "a three-ply rope is not easily broken"), but the case ending differs (accusative *aš₂-la* vs nominative *aš-lu* in all Tablet V witnesses), the preceding line is `ba-tu-la ša ina s[un...]` ("the youth who in the lap of…") rather than the expected *šittā takšāti*, and the layout (indented continuation lines, short units) does not match the Kuyunjik Gilgamesh manuscripts. The file note "Cf. BWL 260" (Lambert's Babylonian Wisdom Literature) identifies it correctly: it is a proverb collection that quotes the same saying Enkidu uses.
+
+### K.17196 (0.15) — not Gilgamesh; wisdom, lament, or hymnic-prayer
+
+Key phrases: `urru ana mūšīti` ("day into night"), `pirištu kankat` ("the secret is sealed"), `inūš` ("it quaked"). The Gilgamesh corpus uses different constructions for day/night (*urra u mūša*, *šeššet urrī u sebe mušâti*) and a different vocabulary for secrets (*niṣirtu*, *katimtu* — not *pirištu kankat*). The ruling after line 3' matches no ruling position in either Tablet I or XI. The file note already ruled out the Babylonian Theodicy. This is wisdom, lament, or hymnic-prayer literature. `pirištu kankat` is the best search key.
