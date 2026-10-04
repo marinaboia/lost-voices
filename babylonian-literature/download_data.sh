@@ -56,6 +56,9 @@ for TABLET in I II III IV V VI VII VIII IX X XI XII; do
   echo "  Tablet $TABLET..."
   curl -s -o "$DATA_DIR/gilgamesh/tablet_${TABLET}.json" \
     "${BASE}/${TABLET}/display"
+  # Per-manuscript sign lines (sign-list names), used by ngram_matcher.py
+  curl -s -o "$DATA_DIR/gilgamesh/signs_${TABLET}.json" \
+    "${BASE}/${TABLET}/signs"
   sleep 0.3
 done
 

@@ -1,0 +1,30 @@
+{
+  "1 line(s)": {
+    "windows": 4472,
+    "matchable": 3315,
+    "top1": 0.691,
+    "top5": 0.856,
+    "top10": 0.901
+  },
+  "2 line(s)": {
+    "windows": 4879,
+    "matchable": 3826,
+    "top1": 0.777,
+    "top5": 0.9,
+    "top10": 0.931
+  },
+  "3 line(s)": {
+    "windows": 4664,
+    "matchable": 3744,
+    "top1": 0.827,
+    "top5": 0.92,
+    "top10": 0.945
+  },
+  "all": {
+    "windows": 14015,
+    "matchable": 10885,
+    "top1": 0.768,
+    "top5": 0.893,
+    "top10": 0.927
+  }
+}
