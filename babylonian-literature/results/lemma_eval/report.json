@@ -1,0 +1,1286 @@
+{
+  "sonnet-low": {
+    "accuracy": {
+      "all": {
+        "strict": 0.678,
+        "lenient": 0.733,
+        "words": 659
+      },
+      "logogram": {
+        "strict": 0.637,
+        "lenient": 0.648,
+        "words": 91
+      },
+      "damaged": {
+        "strict": 0.596,
+        "lenient": 0.642,
+        "words": 193
+      },
+      "clean": {
+        "strict": 0.725,
+        "lenient": 0.791,
+        "words": 393
+      }
+    },
+    "abstained": 0.029,
+    "restorations_lemmatized": "15/28",
+    "pairs_sharing_content_lemma": {
+      "model": 3,
+      "gold": 4,
+      "total": 15
+    },
+    "errors": 0,
+    "refusals": 0,
+    "tokens": {
+      "input": 56694,
+      "output": 27091
+    },
+    "cost_standard_usd": 0.38,
+    "cost_batch_usd": 0.19,
+    "sample_mistakes": [
+      {
+        "word": "ul",
+        "gold": [
+          "ul"
+        ],
+        "pred": "ula"
+      },
+      {
+        "word": "i-šu",
+        "gold": [
+          "ešû"
+        ],
+        "pred": "išû"
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "šu-na-ta",
+        "gold": [
+          "šuttu"
+        ],
+        "pred": "šunatu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "tālu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "tālu"
+      },
+      {
+        "word": "NINDAN.TA.A]M₃",
+        "gold": [
+          "nindanu"
+        ],
+        "pred": "ninda"
+      },
+      {
+        "word": "E₂.GAR₈-MEŠ-ša₂",
+        "gold": [
+          "igartu"
+        ],
+        "pred": "bētu"
+      },
+      {
+        "word": "š]a₂-a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāti"
+      },
+      {
+        "word": "6-šu₂",
+        "gold": [
+          "šeššiš"
+        ],
+        "pred": "šiddu"
+      },
+      {
+        "word": "GU[R₂-s]a",
+        "gold": [
+          "kippatu"
+        ],
+        "pred": "târu"
+      },
+      {
+        "word": "AB-hi[r",
+        "gold": [
+          "mahāru"
+        ],
+        "pred": "ebiru"
+      },
+      {
+        "word": "la#-an-ši",
+        "gold": [
+          "lānu"
+        ],
+        "pred": "lā"
+      },
+      {
+        "word": "ša₂#-[a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šâši"
+      },
+      {
+        "word": "ur-tag-[g]i-ib-šu",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": "rutkubu"
+      },
+      {
+        "word": "li-zer-ka",
+        "gold": [
+          "zêru"
+        ],
+        "pred": "zārû"
+      },
+      {
+        "word": "ah-ša₂",
+        "gold": [
+          "ahu"
+        ],
+        "pred": "aḫšu"
+      },
+      {
+        "word": "zu-um-me",
+        "gold": [
+          "zummû"
+        ],
+        "pred": "zumû"
+      },
+      {
+        "word": "{m}ur-šanabi₂",
+        "gold": [
+          "Ur-Šanabi"
+        ],
+        "pred": "Uršanabi"
+      },
+      {
+        "word": "LU₂",
+        "gold": [
+          "awīlu"
+        ],
+        "pred": "amēlu"
+      },
+      {
+        "word": "ur-ra",
+        "gold": [
+          "urru"
+        ],
+        "pred": "urra"
+      },
+      {
+        "word": "su-pu₂-ri",
+        "gold": [
+          "supūru"
+        ],
+        "pred": "suppuru"
+      },
+      {
+        "word": "EGIR-ni",
+        "gold": [
+          "arki"
+        ],
+        "pred": "warkī"
+      },
+      {
+        "word": "lib₂-[ka-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "lib₂-[ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "l[ib₂-ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "ap-pa[l-sa-am-ma",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": "palāsu"
+      },
+      {
+        "word": "[ep-r]i",
+        "gold": [
+          "eperu"
+        ],
+        "pred": "epru"
+      },
+      {
+        "word": "[ap-pal-sa-am-m]a",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ku-um-mu-su",
+        "gold": [
+          "kamāsu"
+        ],
+        "pred": "kummusu"
+      },
+      {
+        "word": "ul-tu",
+        "gold": [
+          "ištu"
+        ],
+        "pred": "ultu"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "šu-me-e",
+        "gold": [
+          "šumû"
+        ],
+        "pred": "šamû"
+      },
+      {
+        "word": "še-e-ri",
+        "gold": [
+          "šīru"
+        ],
+        "pred": "šērū"
+      },
+      {
+        "word": "ka-ṣa-a-ti",
+        "gold": [
+          "kaṣû"
+        ],
+        "pred": "kaṣātu"
+      },
+      {
+        "word": "dun-nu-na",
+        "gold": [
+          "danānu"
+        ],
+        "pred": "dunnunu"
+      },
+      {
+        "word": "ša₂-šu-m]a",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šū"
+      },
+      {
+        "word": "MU-ar₂",
+        "gold": [
+          "zakāru"
+        ],
+        "pred": "mû"
+      },
+      {
+        "word": "ma-l]i-ki",
+        "gold": [
+          "māliku"
+        ],
+        "pred": "malku"
+      },
+      {
+        "word": "li-in-qu-tam-ma",
+        "gold": [
+          "maqātu"
+        ],
+        "pred": "naqātu"
+      }
+    ]
+  },
+  "sonnet-medium": {
+    "accuracy": {
+      "all": {
+        "strict": 0.683,
+        "lenient": 0.736,
+        "words": 659
+      },
+      "logogram": {
+        "strict": 0.659,
+        "lenient": 0.681,
+        "words": 91
+      },
+      "damaged": {
+        "strict": 0.585,
+        "lenient": 0.632,
+        "words": 193
+      },
+      "clean": {
+        "strict": 0.728,
+        "lenient": 0.789,
+        "words": 393
+      }
+    },
+    "abstained": 0.021,
+    "restorations_lemmatized": "13/28",
+    "pairs_sharing_content_lemma": {
+      "model": 3,
+      "gold": 4,
+      "total": 15
+    },
+    "errors": 0,
+    "refusals": 0,
+    "tokens": {
+      "input": 56694,
+      "output": 27108
+    },
+    "cost_standard_usd": 0.38,
+    "cost_batch_usd": 0.19,
+    "sample_mistakes": [
+      {
+        "word": "ul",
+        "gold": [
+          "ul"
+        ],
+        "pred": "ula"
+      },
+      {
+        "word": "i-šu",
+        "gold": [
+          "ešû"
+        ],
+        "pred": "išû"
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "ṣal-lu",
+        "gold": [
+          "ṣallu"
+        ],
+        "pred": "ṣalālu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "tālu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "tālu"
+      },
+      {
+        "word": "NINDAN.TA.A]M₃",
+        "gold": [
+          "nindanu"
+        ],
+        "pred": "ninda"
+      },
+      {
+        "word": "E₂.GAR₈-MEŠ-ša₂",
+        "gold": [
+          "igartu"
+        ],
+        "pred": "bīt egāri"
+      },
+      {
+        "word": "š]a₂-a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāti"
+      },
+      {
+        "word": "[ur-tag-gi-ib-š]i",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": "raggubu"
+      },
+      {
+        "word": "6-šu₂",
+        "gold": [
+          "šeššiš"
+        ],
+        "pred": "šiššu"
+      },
+      {
+        "word": "GU[R₂-s]a",
+        "gold": [
+          "kippatu"
+        ],
+        "pred": "târu"
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": "ešeru"
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": "ešeru"
+      },
+      {
+        "word": "AB-hi[r",
+        "gold": [
+          "mahāru"
+        ],
+        "pred": "abhirû"
+      },
+      {
+        "word": "la#-an-ši",
+        "gold": [
+          "lānu"
+        ],
+        "pred": "lā"
+      },
+      {
+        "word": "ur-tag-[g]i-ib-šu",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": "rutuggubu"
+      },
+      {
+        "word": "li-zer-ka",
+        "gold": [
+          "zêru"
+        ],
+        "pred": "zārû"
+      },
+      {
+        "word": "ah-ša₂",
+        "gold": [
+          "ahu"
+        ],
+        "pred": "ahšu"
+      },
+      {
+        "word": "{m}ur-šanabi₂",
+        "gold": [
+          "Ur-Šanabi"
+        ],
+        "pred": "Uršanabi"
+      },
+      {
+        "word": "LU₂",
+        "gold": [
+          "awīlu"
+        ],
+        "pred": "amēlu"
+      },
+      {
+        "word": "ur-ra",
+        "gold": [
+          "urru"
+        ],
+        "pred": "urra"
+      },
+      {
+        "word": "su-pu₂-ri",
+        "gold": [
+          "supūru"
+        ],
+        "pred": "suppuru"
+      },
+      {
+        "word": "EGIR-ni",
+        "gold": [
+          "arki"
+        ],
+        "pred": "warkī"
+      },
+      {
+        "word": "hur-sa-a-ni",
+        "gold": [
+          "huršānu"
+        ],
+        "pred": "ḫursānu"
+      },
+      {
+        "word": "lib₂-[ka-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "lib₂-[ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "l[ib₂-ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": "kanīku"
+      },
+      {
+        "word": "E₂#",
+        "gold": [
+          "bītu"
+        ],
+        "pred": "bētu"
+      },
+      {
+        "word": "ap-pa[l-sa-am-ma",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": "palāsu"
+      },
+      {
+        "word": "[ap-pal-sa-am-m]a",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": "naplusu"
+      },
+      {
+        "word": "ku-um-mu-su",
+        "gold": [
+          "kamāsu"
+        ],
+        "pred": "kummusu"
+      },
+      {
+        "word": "š]u-ut",
+        "gold": [
+          "šūt"
+        ],
+        "pred": "ša"
+      },
+      {
+        "word": "ul-tu",
+        "gold": [
+          "ištu"
+        ],
+        "pred": "ultu"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "šu-me-e",
+        "gold": [
+          "šumû"
+        ],
+        "pred": "šamû"
+      },
+      {
+        "word": "še-e-ri",
+        "gold": [
+          "šīru"
+        ],
+        "pred": "šērū"
+      },
+      {
+        "word": "ša₂-šu-m]a",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šū"
+      },
+      {
+        "word": "MU-ar₂",
+        "gold": [
+          "zakāru"
+        ],
+        "pred": "târu"
+      },
+      {
+        "word": "li-in-qu-tam-ma",
+        "gold": [
+          "maqātu"
+        ],
+        "pred": "naqû"
+      }
+    ]
+  },
+  "opus-low": {
+    "accuracy": {
+      "all": {
+        "strict": 0.786,
+        "lenient": 0.825,
+        "words": 659
+      },
+      "logogram": {
+        "strict": 0.813,
+        "lenient": 0.857,
+        "words": 91
+      },
+      "damaged": {
+        "strict": 0.668,
+        "lenient": 0.715,
+        "words": 193
+      },
+      "clean": {
+        "strict": 0.842,
+        "lenient": 0.875,
+        "words": 393
+      }
+    },
+    "abstained": 0.03,
+    "restorations_lemmatized": "2/28",
+    "pairs_sharing_content_lemma": {
+      "model": 3,
+      "gold": 4,
+      "total": 15
+    },
+    "errors": 0,
+    "refusals": 0,
+    "tokens": {
+      "input": 56694,
+      "output": 27067
+    },
+    "cost_standard_usd": 0.77,
+    "cost_batch_usd": 0.38,
+    "sample_mistakes": [
+      {
+        "word": "i-šu",
+        "gold": [
+          "ešû"
+        ],
+        "pred": "išû"
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "ṣal-lu",
+        "gold": [
+          "ṣallu"
+        ],
+        "pred": "ṣalālu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "bu-na-ša₂",
+        "gold": [
+          "būnu"
+        ],
+        "pred": "bunnannû"
+      },
+      {
+        "word": "E₂.GAR₈-MEŠ-ša₂",
+        "gold": [
+          "igartu"
+        ],
+        "pred": "igāru"
+      },
+      {
+        "word": "š]a₂-a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāti"
+      },
+      {
+        "word": "[ur-tag-gi-ib-š]i",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "6-šu₂",
+        "gold": [
+          "šeššiš"
+        ],
+        "pred": "šeššu"
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "AB-hi[r",
+        "gold": [
+          "mahāru"
+        ],
+        "pred": "šapīru"
+      },
+      {
+        "word": "ša₂#-[a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāšu"
+      },
+      {
+        "word": "ur-tag-[g]i-ib-šu",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": "ruqqubu"
+      },
+      {
+        "word": "LU₂",
+        "gold": [
+          "awīlu"
+        ],
+        "pred": "amēlu"
+      },
+      {
+        "word": "ur-ra",
+        "gold": [
+          "urru"
+        ],
+        "pred": "urra"
+      },
+      {
+        "word": "har-[ra-na-tu₂",
+        "gold": [
+          "harrānu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "lib₂-[ka-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "lib₂-[ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "l[ib₂-ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ap-pa[l-sa-am-ma",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": "palāsu"
+      },
+      {
+        "word": "[ep-r]i",
+        "gold": [
+          "eperu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "[ap-pal-sa-am-m]a",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ku-um-mu-su",
+        "gold": [
+          "kamāsu"
+        ],
+        "pred": "kummusu"
+      },
+      {
+        "word": "ul-tu",
+        "gold": [
+          "ištu"
+        ],
+        "pred": "ultu"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "še-e-ri",
+        "gold": [
+          "šīru"
+        ],
+        "pred": "šēru"
+      },
+      {
+        "word": "dun-nu-na",
+        "gold": [
+          "danānu"
+        ],
+        "pred": "dunnunu"
+      },
+      {
+        "word": "li-in-qu-tam-ma",
+        "gold": [
+          "maqātu"
+        ],
+        "pred": "naqādu"
+      },
+      {
+        "word": "dun-nu-nu",
+        "gold": [
+          "danānu"
+        ],
+        "pred": "dunnunu"
+      },
+      {
+        "word": "ša₂-šu#-ma",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāšu"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "ṣal-lu",
+        "gold": [
+          "ṣallu"
+        ],
+        "pred": "ṣalālu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "aš₂-bat-ma",
+        "gold": [
+          "ašābu"
+        ],
+        "pred": "wašābu"
+      },
+      {
+        "word": "t]am-ti₃",
+        "gold": [
+          "tiāmtu"
+        ],
+        "pred": "tâmtu"
+      },
+      {
+        "word": "[ši]t-ta#",
+        "gold": [
+          "šina"
+        ],
+        "pred": "šittā"
+      }
+    ]
+  },
+  "opus-medium": {
+    "accuracy": {
+      "all": {
+        "strict": 0.785,
+        "lenient": 0.818,
+        "words": 659
+      },
+      "logogram": {
+        "strict": 0.791,
+        "lenient": 0.835,
+        "words": 91
+      },
+      "damaged": {
+        "strict": 0.632,
+        "lenient": 0.668,
+        "words": 193
+      },
+      "clean": {
+        "strict": 0.855,
+        "lenient": 0.883,
+        "words": 393
+      }
+    },
+    "abstained": 0.056,
+    "restorations_lemmatized": "2/28",
+    "pairs_sharing_content_lemma": {
+      "model": 3,
+      "gold": 4,
+      "total": 15
+    },
+    "errors": 0,
+    "refusals": 0,
+    "tokens": {
+      "input": 56694,
+      "output": 37296
+    },
+    "cost_standard_usd": 0.97,
+    "cost_batch_usd": 0.49,
+    "sample_mistakes": [
+      {
+        "word": "mu-ṭap₃-pi-l]a",
+        "gold": [
+          "muṭappilu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "i-šu",
+        "gold": [
+          "ešû"
+        ],
+        "pred": "išû"
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "ṣal-lu",
+        "gold": [
+          "ṣallu"
+        ],
+        "pred": "ṣalālu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "NINDAN.TA.A]M₃",
+        "gold": [
+          "nindanu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "E₂.GAR₈-MEŠ-ša₂",
+        "gold": [
+          "igartu"
+        ],
+        "pred": "igāru"
+      },
+      {
+        "word": "š]a₂-a-ši",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šuāšu"
+      },
+      {
+        "word": "[ur-tag-gi-ib-š]i",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "6-šu₂",
+        "gold": [
+          "šeššiš"
+        ],
+        "pred": "šeššu"
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "10",
+        "gold": [
+          "ešer"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "AB-hi[r",
+        "gold": [
+          "mahāru"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ur-tag-[g]i-ib-šu",
+        "gold": [
+          "ruggubu"
+        ],
+        "pred": "ragābu"
+      },
+      {
+        "word": "pa-n]a-as-su",
+        "gold": [
+          "pānu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "LU₂",
+        "gold": [
+          "awīlu"
+        ],
+        "pred": "amēlu"
+      },
+      {
+        "word": "ur-ra",
+        "gold": [
+          "urru"
+        ],
+        "pred": "urra"
+      },
+      {
+        "word": "har-[ra-na-tu₂",
+        "gold": [
+          "harrānu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "lib₂-[ka-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "lib₂-[ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "l[ib₂-ku-nik-ku",
+        "gold": [
+          "bakû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ap-pa[l-sa-am-ma",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": "palāsu"
+      },
+      {
+        "word": "[ep-r]i",
+        "gold": [
+          "eperu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "[ap-pal-sa-am-m]a",
+        "gold": [
+          "naplāsu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ku-um-mu-su",
+        "gold": [
+          "kamāsu"
+        ],
+        "pred": "kummu"
+      },
+      {
+        "word": "ul-tu",
+        "gold": [
+          "ištu"
+        ],
+        "pred": "ultu"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "{d}a-n]im",
+        "gold": [
+          "Anu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ša₂-šu-m]a",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "dun-nu-nu",
+        "gold": [
+          "danānu"
+        ],
+        "pred": "dunnunu"
+      },
+      {
+        "word": "ša₂-šu#-ma",
+        "gold": [
+          "šâšu"
+        ],
+        "pred": "šû"
+      },
+      {
+        "word": "{d}+en-lil₂",
+        "gold": [
+          "Ellil"
+        ],
+        "pred": "Enlil"
+      },
+      {
+        "word": "[lu-ur]-ši",
+        "gold": [
+          "rašû"
+        ],
+        "pred": ""
+      },
+      {
+        "word": "ma]-a-a-al",
+        "gold": [
+          "mayāru"
+        ],
+        "pred": "mayyālu"
+      },
+      {
+        "word": "ṣal-lu",
+        "gold": [
+          "ṣallu"
+        ],
+        "pred": "ṣalālu"
+      },
+      {
+        "word": "u₂-tu-lu-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "u₂#-tu-ul-ma",
+        "gold": [
+          "nâlu"
+        ],
+        "pred": "utūlu"
+      },
+      {
+        "word": "aš₂-bat-ma",
+        "gold": [
+          "ašābu"
+        ],
+        "pred": "wašābu"
+      },
+      {
+        "word": "t]am-ti₃",
+        "gold": [
+          "tiāmtu"
+        ],
+        "pred": "tâmtu"
+      }
+    ]
+  }
+}
